@@ -1,0 +1,81 @@
+.forgot{
+    background-color:   #f0f2f5;    height: 100vh;
+       width: 100vw;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   .forgotWrapper{
+       width: 70%;
+       height: 70%;
+       display: flex;
+   }
+   
+   .forgotLogo{
+       color: #1775ee;
+       font-weight: 800;
+       font-size: 35px;
+       margin-bottom: 10px;
+   }
+   .forgotDesc{
+       font-size: 24px;
+   }
+   .forgotBox{
+       height: 300px;
+       padding: 20px;
+       background-color: white;
+       border-radius: 10px;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+   }
+   
+   .forgotInput{
+       height: 50px;
+       border-radius: 10px;
+       border: 1px solid gray;
+       font-size: 18px;
+       padding-left: 20px;
+   }
+   
+   .forgotInput:focus{
+       outline: none;
+   }
+   
+   .forgotButton{
+       height: 50px;
+       border-radius: 10px;
+       border: none;
+       background-color: #1775ee;
+       color: white;
+       font-size: 20px;
+       font-weight: 500;
+       cursor: pointer;
+   }
+   .forgotButton:disabled{
+       cursor: not-allowed;
+   }
+   .forgotForgot{
+       text-align: center;
+       color: #1775ee;
+   }
+   
+   .forgotRegisterButton{
+       width: 60%;
+       align-self: center;
+       height: 50px;
+       border-radius: 10px;
+       border: none;
+       background-color: #42b72a;
+       color: white !important;
+       font-size: 20px;
+       font-weight: 500;
+       cursor: pointer;
+   }
+   .forgotLeft,
+   .forgotRight {
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+   }
