@@ -11,9 +11,9 @@ function Feed({ username }) {
   useEffect(() => {
     const fetchPosts = async () => {
       const res = username
-        ? await axios.get(`http://localhost:4000/api/posts/profile/${username}`)
+        ? await axios.get(`https://social-backend-vercel.vercel.app/api/posts/profile/${username}`)
         : await axios.get(
-            `http://localhost:4000/api/posts/timeline/${user._id}`
+            `https://social-backend-vercel.vercel.app/api/posts/timeline/${user._id}`
           );
       setPosts(
         res.data.sort((p1, p2) => {

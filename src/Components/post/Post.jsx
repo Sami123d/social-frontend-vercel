@@ -12,7 +12,7 @@ function Post({ post }) {
   const [user, setUser] = useState({});
   const likeHandler = () => {
     try{
-     axios.put(`http://localhost:4000/api/posts/${post._id}/like`, {userId:  currentuser._id.$oid})
+     axios.put(`https://social-backend-vercel.vercel.app/api/posts/${post._id}/like`, {userId:  currentuser._id.$oid})
     }catch(err){
         console.log(err)
     }
@@ -26,7 +26,7 @@ function Post({ post }) {
   useEffect(() => {
     const fetchUser = async () => {
       const res = await axios.get(
-        `http://localhost:4000/api/users?userId=${post.userId}`
+        `https://social-backend-vercel.vercel.app/api/users?userId=${post.userId}`
       );
       setUser(res.data);
     };

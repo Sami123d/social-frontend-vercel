@@ -22,7 +22,7 @@ export default function Register() {
         password:password.current.value
       }
        try{
-     const res = await axios.post("http://localhost:4000/api/auth/register", user)
+     const res = await axios.post("https://social-backend-vercel.vercel.app/api/auth/register", user)
      navigate("/login");
        console.log("registered")
     }catch(err){

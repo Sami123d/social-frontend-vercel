@@ -19,7 +19,7 @@ function Share() {
     }
     try{
       console.log(newPost," (new post)")
-      const res  = await axios.post("http://localhost:4000/api/posts/", newPost);
+      const res  = await axios.post("https://social-backend-vercel.vercel.app/api/posts/", newPost);
       window.location.reload()
       console.log(res.data)
     }catch(err){console.log(err, "ewror")}

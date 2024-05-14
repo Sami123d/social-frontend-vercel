@@ -20,7 +20,7 @@ function Rightbar({ user }) {
     const getFriends = async () => {
       try {
         const friendsList = await axios.get(
-          "http://localhost:4000/api/users/friends/" + user._id
+          "https://social-backend-vercel.vercel.app/api/users/friends/" + user._id
         );
         setFriends(friendsList.data);
       } catch (Err) {
@@ -52,12 +52,12 @@ function Rightbar({ user }) {
   const handleClick = async () => {
     try {
       if (followed) {
-        await axios.put(`http://localhost:4000/api/users/${user._id}/unfollow`, {
+        await axios.put(`https://social-backend-vercel.vercel.app/api/users/${user._id}/unfollow`, {
           userId: currentUser._id.$oid,
         });
         dispatch({ type: "UNFOLLOW", payload: user._id });
       } else {
-        await axios.put(`http://localhost:4000/api/users/${user._id}/follow`, {
+        await axios.put(`https://social-backend-vercel.vercel.app/api/users/${user._id}/follow`, {
           userId: currentUser._id.$oid,
         });
         dispatch({ type: "FOLLOW", payload: user._id });

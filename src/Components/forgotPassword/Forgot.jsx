@@ -18,7 +18,7 @@ function Forgot() {
             
          }
    try{
-     const res = await axios.post("http://localhost:4000/api/auth/forgot-password", values)
+     const res = await axios.post("https://social-backend-vercel.vercel.app/api/auth/forgot-password", values)
     console.log("forgot sucessfully")
 
      navigate("/login")
