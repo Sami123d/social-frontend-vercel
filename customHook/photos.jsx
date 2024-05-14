@@ -1,4 +1,4 @@
-import { storage, getDownloadURL, ref, uploadBytesResumable } from "../utills/config.jsx";
+import { storage, getDownloadURL, ref, uploadBytesResumable } from "../utills/config.js";
 
 
 
