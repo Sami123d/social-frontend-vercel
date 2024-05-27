@@ -30,7 +30,7 @@ function Forgot() {
     <div className="forgot">
       <div className="forgotWrapper">
         <div className="forgotLeft">
-          <h2 className="forgotLogo"> Lamasocial</h2>
+          <h2 className="forgotLogo"> Socioplex</h2>
           <span className="forgotDesc">
             Connect with friends and the world around you using Lamasocial
           </span>
