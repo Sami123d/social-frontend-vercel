@@ -19,7 +19,7 @@ function Topbar() {
       <div className="topbarContainer">
         <div className="leftTopbar">
           <Link to={"/"}  style={{ textDecoration: 'none' }}> 
-            <p className="logoTopbar">Lamasocial</p>
+            <p className="logoTopbar">Socioplex</p>
           </Link>
         </div>
         <div className="middleTopbar">
